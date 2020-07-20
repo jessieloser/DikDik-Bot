@@ -1,0 +1,11 @@
+bot_token: NzMyMzk1ODE3MjM4NzkwMjQ2.XxTMXg.n5Ycj801xKTvB2OPXJdEr75gZcI
+bot_prefix: /
+command_title: Commands
+commands:
+  - /set channelName message to send to channel
+  - /jokeHere
+  - /jokeThere channelName
+  - /factsHere
+  - /factsThere channelName
+  - /help DikDik
+
