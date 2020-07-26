@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate, x *discordgo.ChannelEdit) {
+func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 	if msg.Author.Bot {
 		return
 	}
@@ -17,7 +17,7 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate, x *discordgo.
 	//split string
 	args := strings.Split(msg.Content, " ")
 	if len(args[:]) > 1 {
-		if args[0] == config.Prefix+"set" {
+		if args[0] == config.Prefix+"+say" {
 			if len(args[:]) > 2 {
 				args[2] = strings.Join(args[2:], " ")
 				//makes sure all spaces are trimmed from front and back
@@ -61,9 +61,11 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate, x *discordgo.
 	args[0] = string(runes[1:])
 	//check first arg to decide how to proceed
 	switch args[0] {
-	case "set":
+	case "+say":
 		OnSet(s, msg, args[:])
 		break
+	case "-say":
+		OnUnset(s, msg, args[:])
 	case "jokeThere":
 		OnJokeThere(s, msg, args[:])
 		break

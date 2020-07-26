@@ -24,12 +24,14 @@ func GetConfig() DikDikConfig {
 		Prefix:       prefix,
 		CommandTitle: "Commands",
 		Commands: []string{
-			prefix + "set channelName message to send to channel",
+			prefix + "+say channelName message to send to channel",
+			prefix + "-say",
 			prefix + "jokeHere",
 			prefix + "jokeThere channelName",
 			prefix + "factsHere",
 			prefix + "factsThere channelName",
 			prefix + "help DikDik",
+
 		},
 	}
 

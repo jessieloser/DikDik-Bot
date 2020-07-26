@@ -1,8 +1,9 @@
-bot_token:
+bot_token: 
 bot_prefix: /
 command_title: Commands
 commands:
-  - /set channelName message to send to channel
+  - /+say channelName message to send to channel
+  - /-say
   - /jokeHere
   - /jokeThere channelName
   - /factsHere

@@ -49,6 +49,10 @@ func OnFactsHere(s *discordgo.Session, msg *discordgo.MessageCreate) {
 }
 
 func OnSet(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
+	//set the channel topic
+	s.ChannelEditComplex(msg.ChannelID, &discordgo.ChannelEdit{
+		Topic: ":red_circle:  Currently sending all messages to " + arg[1],
+	})
 
 	//confirm channel id is in list and print id
 	if len(arg[:]) > 1 {
@@ -56,4 +60,11 @@ func OnSet(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
 	} else {
 		s.ChannelMessageSend(msg.ChannelID, "Invalid Channel. Use /help to see commands")
 	}
+}
+func OnUnset(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
+	//clear the channel topic
+	s.ChannelEditComplex(msg.ChannelID, &discordgo.ChannelEdit{
+		Topic: "",
+	})
+		s.ChannelMessageSend(msg.ChannelID, "You are no longer sending messages to channel")
 }
