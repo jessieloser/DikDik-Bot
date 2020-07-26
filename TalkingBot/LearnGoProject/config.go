@@ -12,6 +12,9 @@ type DikDikConfig struct {
 	Commands     []string          `yaml:"commands"`
 	Channels     map[string]string `yaml:"stored_channels"`
 }
+type channel struct{
+	Topic	string
+}
 
 const configPath = "./dikdik-config.yml"
 

@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
+func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate, x *discordgo.ChannelEdit) {
 	if msg.Author.Bot {
 		return
 	}
@@ -20,7 +20,6 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 		if args[0] == config.Prefix+"set" {
 			if len(args[:]) > 2 {
 				args[2] = strings.Join(args[2:], " ")
-
 				//makes sure all spaces are trimmed from front and back
 				for i, arg := range args {
 
