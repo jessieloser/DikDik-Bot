@@ -10,6 +10,7 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 	if msg.Author.Bot {
 		return
 	}
+
 	//confirm prefix is correct
 	if len(msg.GuildID) == 0 || !strings.HasPrefix(msg.Content, config.Prefix) {
 		return
