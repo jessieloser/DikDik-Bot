@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85d50282-a31c-4ccc-b49f-b1f04f3c52c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/DikDik-Bot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/.idea/TestEx.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/.idea/LearnGoProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/LearnGoProject.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/commands.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/dikdik-config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/events.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/facts.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/jokes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TalkingBot/LearnGoProject/main.go" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1eXuf4PneSxlwoHhskSQVCiaLlY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="go" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.go" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build learning.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGoProject" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$APPLICATION_CONFIG_DIR$/scratches/learning.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build learning.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2252" y="162" key="#GOPATH" timestamp="1594517306959">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2252" y="162" key="#GOPATH/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594517306959" />
+    <state x="752" y="352" key="#Go_Modules" timestamp="1594682131784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="352" key="#Go_Modules/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594682131784" />
+    <state x="2765" y="383" width="394" height="274" key="#Notifications" timestamp="1596930729376">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2765" y="383" width="394" height="274" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596930729376" />
+    <state x="2334" y="173" width="1092" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596928310384">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="173" width="1092" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596928310384" />
+    <state x="694" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594732267250">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594732267250" />
+    <state x="2560" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596926472403">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2560" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596926472403" />
+    <state x="2456" y="160" key="#xdebugger.evaluate" timestamp="1594516961885">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2456" y="160" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594516961885" />
+    <state x="2627" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596927336626">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2627" y="385" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596927336626" />
+    <state x="2660" y="273" key="FileChooserDialogImpl" timestamp="1596928240078">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594732945166" />
+    <state x="2660" y="273" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596928240078" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1596928633659">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="517" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594732903353" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596928633659" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1596928633658">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="517" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594732903353" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596928633658" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1596928633658">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="517" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594732903353" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596928633658" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1596928633659">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="517" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594732903353" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596928633659" />
+    <state width="1020" height="319" key="GridCell.Tab.1.bottom" timestamp="1594520583077">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1020" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594520583077" />
+    <state width="1020" height="319" key="GridCell.Tab.1.center" timestamp="1594520583076">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1020" height="319" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594520583076" />
+    <state width="1020" height="319" key="GridCell.Tab.1.left" timestamp="1594520583076">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1020" height="319" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594520583076" />
+    <state width="1020" height="319" key="GridCell.Tab.1.right" timestamp="1594520583076">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1020" height="319" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594520583076" />
+    <state x="2381" y="165" key="SettingsEditor" timestamp="1596930880684">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596897935743" />
+    <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596930880684" />
+    <state x="671" y="197" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594681377240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="671" y="197" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594681377240" />
+    <state x="2015" y="232" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1594515954007">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2015" y="232" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594515954007" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1594687714741">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594687714741" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1594760515827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594760515827" />
+    <state x="2837" y="262" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594516779673" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/learning.go</url>
+          <line>5</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
