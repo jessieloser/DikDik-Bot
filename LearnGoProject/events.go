@@ -88,8 +88,11 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 		case "jokeHere":
 			OnJokeHere(s, msg)
 			break
-		default:
+		case "help":
 			OnHelp(s, msg)
+			break
+		default:
+			break
 		}
 	}
 }

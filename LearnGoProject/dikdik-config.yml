@@ -2,10 +2,10 @@ bot_token:
 bot_prefix: /
 command_title: Commands
 commands:
-  - /+say channelName message to send to channel
+  - /+say channelName [message to send to channel]
   - /-say
   - /jokeHere
-  - /jokeThere channelName
+  - /jokeThere MentionChannel
   - /factsHere
-  - /factsThere channelName
-  - /help DikDik
+  - /factsThere MentionChannel
+  - /help

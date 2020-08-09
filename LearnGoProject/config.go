@@ -27,10 +27,10 @@ func GetConfig() DikDikConfig {
 			prefix + "+say channelName message to send to channel",
 			prefix + "-say",
 			prefix + "jokeHere",
-			prefix + "jokeThere channelName",
+			prefix + "jokeThere MentionChannel",
 			prefix + "factsHere",
-			prefix + "factsThere channelName",
-			prefix + "help DikDik",
+			prefix + "factsThere MentionChannel",
+			prefix + "help",
 		},
 	}
 	err := util.GetConfig(configPath, &defaultConfig)

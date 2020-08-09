@@ -70,7 +70,7 @@ func OnSet(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
 		s.ChannelMessageSend(arg[1], arg[2])
 		s.ChannelMessageSend(msg.ChannelID, "You are now sending messages to <#"+arg[1]+">")
 	} else {
-		s.ChannelMessageSend(msg.ChannelID, "Invalid Channel. Use /help to see commands")
+		s.ChannelMessageSend(msg.ChannelID, "You are currently sending messages to <#"+arg[1]+">")
 	}
 	fmt.Println(m)
 }
