@@ -10,6 +10,7 @@ import (
 var config DikDikConfig
 var m map[string]string
 var dm map[string]string
+var time map[string]string
 var bool = false
 
 func main() {

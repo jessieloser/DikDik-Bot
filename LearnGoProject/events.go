@@ -14,7 +14,7 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 	//confirm prefix is correct
 	if len(msg.GuildID) == 0 {
 		return
-	} else if !strings.HasPrefix(msg.Content, config.Prefix){
+	} else if !strings.HasPrefix(msg.Content, config.Prefix) && !strings.HasPrefix(msg.Content, "`"+config.Prefix) && !strings.HasPrefix(msg.Content, "``"+config.Prefix) {
 		//confirms say is active for user and posts all messages to other channel
 
 		if _, exists := m[msg.Author.Username]; exists {
@@ -93,7 +93,7 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 			OnHelp(s, msg)
 			break
 		case "delete":
-			OnDelete(s,msg)
+			OnDelete(s, msg)
 			break
 		default:
 			break
