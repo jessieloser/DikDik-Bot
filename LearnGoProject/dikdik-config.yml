@@ -4,6 +4,7 @@ command_title: Commands
 commands:
   - /+say channelName [message to send to channel]
   - /-say
+  - /delete
   - /jokeHere
   - /jokeThere MentionChannel
   - /factsHere

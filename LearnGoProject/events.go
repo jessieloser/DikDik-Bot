@@ -14,7 +14,7 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 	//confirm prefix is correct
 	if len(msg.GuildID) == 0 {
 		return
-	} else if !strings.HasPrefix(msg.Content, config.Prefix) {
+	} else if !strings.HasPrefix(msg.Content, config.Prefix){
 		//confirms say is active for user and posts all messages to other channel
 
 		if _, exists := m[msg.Author.Username]; exists {
@@ -70,26 +70,30 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 		runes := []rune(args[0])
 		args[0] = string(runes[1:])
 		//check first arg to decide how to proceed
+		args[0] = strings.ToLower(args[0])
 		switch args[0] {
 		case "+say":
 			OnSet(s, msg, args[:])
 			break
 		case "-say":
 			OnUnset(s, msg, args[:])
-		case "jokeThere":
+		case "jokethere":
 			OnJokeThere(s, msg, args[:])
 			break
-		case "factsThere":
+		case "factsthere":
 			OnFactsThere(s, msg, args[:])
 			break
-		case "factsHere":
+		case "factshere":
 			OnFactsHere(s, msg)
 			break
-		case "jokeHere":
+		case "jokehere":
 			OnJokeHere(s, msg)
 			break
 		case "help":
 			OnHelp(s, msg)
+			break
+		case "delete":
+			OnDelete(s,msg)
 			break
 		default:
 			break
@@ -99,8 +103,10 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 
 func OnReady(s *discordgo.Session, ready *discordgo.Ready) {
 
-	//creates map
+	//creates say active map
 	m = make(map[string]string)
+	//create prior message map
+	dm = make(map[string]string)
 	//confirms bot is ready
 
 	testing := fmt.Sprintf("ready your %s\n", ready.User.Username)

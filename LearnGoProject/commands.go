@@ -61,24 +61,27 @@ func OnSet(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
 	//s.ChannelEditComplex(msg.ChannelID, &discordgo.ChannelEdit{
 	//	Topic: ":red_circle:  Currently sending all messages to " + arg[1],
 	//})
-	//checks to see if user is already active
-
+	//create map record
 	m[msg.Author.Username] = arg[1]
 
 	//confirm channel id is in list and print id
 	if len(arg[:]) > 1 {
-		s.ChannelMessageSend(arg[1], arg[2])
+		//post in other channel
+		message, _ := s.ChannelMessageSend(arg[1], arg[2])
+		//record message id that was posted to other channel
+		dm[m[msg.Author.Username]] = message.ID
+		fmt.Println(dm)
 		s.ChannelMessageSend(msg.ChannelID, "You are now sending messages to <#"+arg[1]+">")
 	} else {
 		s.ChannelMessageSend(msg.ChannelID, "You are currently sending messages to <#"+arg[1]+">")
 	}
-	fmt.Println(m)
 }
-
+//while say command is active
 func OnText(s *discordgo.Session, msg *discordgo.MessageCreate) {
 	//posts all messages to other channel
-	s.ChannelMessageSend(m[msg.Author.Username], msg.Content)
-
+	message, _ := s.ChannelMessageSend(m[msg.Author.Username], msg.Content)
+	//record message id that was posted to other channel
+	dm[m[msg.Author.Username]] = message.ID
 }
 
 //-say command
@@ -97,4 +100,17 @@ func OnUnset(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
 		s.ChannelMessageSend(msg.ChannelID, "Say is not currently active for "+msg.Author.Username)
 	}
 	fmt.Println(m)
+}
+//deletes message last posted in channel
+func OnDelete(s *discordgo.Session, msg *discordgo.MessageCreate) {
+	if _, exists := m[msg.Author.Username]; exists {
+		if _, exists := dm[m[msg.Author.Username]]; exists {
+			s.ChannelMessageDelete(m[msg.Author.Username], dm[m[msg.Author.Username]])
+			s.ChannelMessageSend(msg.ChannelID, "The message has been deleted")
+
+		} else {
+			//if user doesnt exist return
+			s.ChannelMessageSend(msg.ChannelID, "Cannot find prior message")
+		}
+	}
 }

@@ -26,6 +26,7 @@ func GetConfig() DikDikConfig {
 		Commands: []string{
 			prefix + "+say channelName message to send to channel",
 			prefix + "-say",
+			prefix + "delete",
 			prefix + "jokeHere",
 			prefix + "jokeThere MentionChannel",
 			prefix + "factsHere",
