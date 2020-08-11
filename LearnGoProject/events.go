@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
 	"strings"
+	"time"
 )
 
 func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
@@ -15,10 +16,14 @@ func OnMessage(s *discordgo.Session, msg *discordgo.MessageCreate) {
 	if len(msg.GuildID) == 0 {
 		return
 	} else if !strings.HasPrefix(msg.Content, config.Prefix) && !strings.HasPrefix(msg.Content, "`"+config.Prefix) && !strings.HasPrefix(msg.Content, "``"+config.Prefix) {
-		//confirms say is active for user and posts all messages to other channel
-
-		if _, exists := m[msg.Author.Username]; exists {
-			OnText(s, msg)
+		//confirms user is commenting in the correct channel
+		if msg.ChannelID == cm[msg.Author.Username]{
+			//confirms say is active for user and posts all messages to other channel
+			if _, exists := m[msg.Author.Username]; exists {
+				OnText(s, msg)
+			} else {
+				return
+			}
 		} else {
 			return
 		}
@@ -107,8 +112,12 @@ func OnReady(s *discordgo.Session, ready *discordgo.Ready) {
 	m = make(map[string]string)
 	//create prior message map
 	dm = make(map[string]string)
-	//confirms bot is ready
+	//create current channel map
+	cm = make(map[string]string)
+	//create timestamp
+	tm = make(map[string]time.Time)
 
+	//confirms bot is ready
 	testing := fmt.Sprintf("ready your %s\n", ready.User.Username)
 	fmt.Printf(testing)
 }

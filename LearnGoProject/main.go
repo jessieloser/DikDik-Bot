@@ -5,13 +5,23 @@ import (
 	"github.com/bwmarrin/discordgo"
 	"log"
 	"strings"
+	"time"
 )
 
 var config DikDikConfig
+//holds the author name and id of channel they are writing to
 var m map[string]string
+//holds the author name and id of last message sent
 var dm map[string]string
-var time map[string]string
+//holds the time since last edit
+var tm map[string]time.Time
+//holds the author and the id of the channel they are writing in
+var cm map[string]string
 var bool = false
+//duration between last message and current message
+var between time.Duration
+//time until timeout and deactivate say automatically
+var sayoffTime float64 = 5
 
 func main() {
 
