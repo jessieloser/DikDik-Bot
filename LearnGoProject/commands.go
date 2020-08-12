@@ -73,7 +73,6 @@ func OnSet(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
 		if len(arg[:]) > 2 {
 			//post in other channel
 			message, _ := s.ChannelMessageSend(arg[1], arg[2])
-
 			//record message id that was posted to other channel
 			dm[m[msg.Author.Username]] = message.ID
 			//set timestamp to last message sent
@@ -89,6 +88,7 @@ func OnSet(s *discordgo.Session, msg *discordgo.MessageCreate, arg []string) {
 
 //while say command is active
 func OnText(s *discordgo.Session, msg *discordgo.MessageCreate) {
+
 	if _, exists := tm[msg.Author.Username]; exists {
 		//sets current time
 		currentTime := time.Now()
@@ -98,13 +98,13 @@ func OnText(s *discordgo.Session, msg *discordgo.MessageCreate) {
 		diff := currentTime.Sub(oldtime)
 		//confirms it hasnt been more then x# of minutes since last message
 		if diff.Minutes() < sayoffTime {
-			//posts all messages to other channel
+			//posts all messages to other channels
 			message, _ := s.ChannelMessageSend(m[msg.Author.Username], msg.Content)
 			//record message id that was posted to other channel
 			dm[m[msg.Author.Username]] = message.ID
 		}else {
 			//if its been longer then x# of minutes delete records
-			s.ChannelMessageSend(msg.ChannelID, "Say automatically turned off after " +strconv.FormatFloat(sayoffTime, 'f',0,64)+ " minutes")
+			s.ChannelMessageSend(msg.ChannelID, m[msg.Author.Username]+" Say automatically turned off after " +strconv.FormatFloat(sayoffTime, 'f',0,64)+ " minutes")
 			delete(m, msg.Author.Username)
 			delete(dm, m[msg.Author.Username])
 			delete(tm, msg.Author.Username)
