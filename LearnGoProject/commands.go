@@ -103,6 +103,7 @@ func OnText(s *discordgo.Session, msg *discordgo.MessageCreate) {
 			//record message id that was posted to other channel
 			dm[m[msg.Author.Username]] = message.ID
 		}else {
+			
 			//if its been longer then x# of minutes delete records
 			s.ChannelMessageSend(msg.ChannelID, m[msg.Author.Username]+" Say automatically turned off after " +strconv.FormatFloat(sayoffTime, 'f',0,64)+ " minutes")
 			delete(m, msg.Author.Username)
