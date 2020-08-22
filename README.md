@@ -9,6 +9,15 @@ Download [Go](https://go-lang.org/).
         $ ./DikDik-Bot
         # Setup dikdik-config.yml
         
+        
+## Config File
+ In dikdik-config.yml
+ 
+         bot_token: <your bot token>
+         bot_prefix: <prefix>
+         csv_path_jokes: <path where Jokes.txt is located>
+         csv_path_facts: <path where Facts.txt is located>
+        
 ## Usage
 Available commands
         
